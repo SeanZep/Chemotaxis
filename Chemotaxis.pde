@@ -1,14 +1,15 @@
- Bacteria[] one = new Bacteria[30];  
+ Bacteria[] one = new Bacteria[5];  
  void setup()   
  {     
  	size(200, 200);
  	for(int i = 0; i < one.length; i++){
  		one[i] = new Bacteria();
  	}
- 	frameRate(4);
+ 	frameRate(60);
  }   
  void draw()   
- {  
+ { 
+ 	background(192); 
  	for(int i = 0; i < one.length; i++){
 	 	one[i].move();
 	 	one[i].show();
@@ -22,9 +23,9 @@
  	void move(){
  		myX = myX + (int)(Math.random()*7)-3;
  		myY = myY + (int)(Math.random()*7)-3;
+
  	}
  	void show(){
- 		background(192);
  		ellipse(myX, myY, 10, 10);
  	}
  }   
