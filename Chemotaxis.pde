@@ -5,7 +5,6 @@
  	for(int i = 0; i < one.length; i++){
  		one[i] = new Bacteria();
  	}
- 	frameRate(60);
  }   
  void draw()   
  { 
@@ -21,11 +20,17 @@
  		myX = myY = 100;
  	}  
  	void move(){
- 		myX = myX + (int)(Math.random()*7)-3;
- 		myY = myY + (int)(Math.random()*7)-3;
-
+ 		myX = myX + (int)(Math.random()*5)-2;
+ 		myY = myY + (int)(Math.random()*5)-2;
  	}
  	void show(){
  		ellipse(myX, myY, 10, 10);
  	}
- }   
+}
+void setColor(){
+	int g = 255;
+	int b = 255; 
+	if(mouseX == myX && mouseY == myY){
+		
+	}
+}   
