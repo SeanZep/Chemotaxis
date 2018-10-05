@@ -1,4 +1,4 @@
- Bacteria[] one = new Bacteria[5];  
+ Bacteria[] one = new Bacteria[100];  
  void setup()   
  {     
  	size(200, 200);
@@ -24,13 +24,11 @@
  		myY = myY + (int)(Math.random()*5)-2;
  	}
  	void show(){
+ 		if(abs(mouseX - myX) < 10 && abs(mouseY - myY) < 10){
+			fill(255, 0, 0);
+		}else{
+			fill(255, 255, 255);
+		}
  		ellipse(myX, myY, 10, 10);
  	}
-}
-void setColor(){
-	int g = 255;
-	int b = 255; 
-	if(mouseX == myX && mouseY == myY){
-		
-	}
-}   
+ }
