@@ -25,11 +25,12 @@
  	}
  }  
  class Bacteria{     
- 	int myX, myY, count, j;
+ 	int myX, myY, count, x2, y2;
  	boolean state;
  	Bacteria(){
  		myX = myY = 100;
- 		j = (int)(Math.random()*4);
+ 		x2 = (int)(Math.random()*4)-2;
+ 		y2 = (int)(Math.random()*4)-2;
  	}  
  	void move(){
  		if(mouseX>myX){
@@ -56,16 +57,8 @@
  		}
  	}
  	void move2(){
- 		if(j == 0){
- 			myX = myX + (int)(Math.random()*10)-7;
- 		}else if(j == 1){
- 			myX = myX + (int)(Math.random()*10)-3;
- 		}
- 		if(j == 2){
- 			myY = myY + (int)(Math.random()*10)-7;
- 		}else if(j == 3){
- 			myY = myY + (int)(Math.random()*10)-3;
- 		}
+ 		myX = myX+x2-1;
+ 		myY = myY+y2-1;
  	}
  	void show2(){
  		ellipse(myX, myY, 10, 10);
