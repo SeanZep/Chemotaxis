@@ -57,8 +57,8 @@
  		}
  	}
  	void move2(){
- 		myX = myX+x2-1;
- 		myY = myY+y2-1;
+ 		myX = myX+x2;
+ 		myY = myY+y2;
  	}
  	void show2(){
  		ellipse(myX, myY, 10, 10);
