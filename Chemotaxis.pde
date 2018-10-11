@@ -29,8 +29,8 @@
  	boolean state;
  	Bacteria(){
  		myX = myY = 100;
- 		x2 = (int)(Math.random()*4)-2;
- 		y2 = (int)(Math.random()*4)-2;
+ 		x2 = (int)(Math.random()*5)-2;
+ 		y2 = (int)(Math.random()*5)-2;
  	}  
  	void move(){
  		if(mouseX>myX){
